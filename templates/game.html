@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>{{player}}</h1>
+
+<p>Select your weapon!</p>
+<form action="/game/{{move}}" class="form" method="post">
+<div>
+    <label for="rock">Rock</label>
+    <input type="radio" id="rock" name="move" value="rock" checked>
+</div>
+<div>
+    <label for="paper">Paper</label>
+    <input type="radio" id="paper" name="move" value="paper">
+</div>
+<div>
+    <label for="scissors">Scissors</label>
+    <input type="radio" id="scissors" name="move" value="scissors">
+</div>
+<br>
+<input type="submit">
+
+</form>
+
+{% endblock%}
