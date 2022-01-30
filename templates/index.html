@@ -2,14 +2,17 @@
 
 {% block content %}
 
-<h2>Enter your name!</h2>
+<section class="main-section">
 
-<form action="/play" method="post" class="form">
-    <input type="text" name="player1_name" id="player1_name" >
-    <input type="submit">
-</form>
+    <div class="enter-name">
+        <h3><span>E</span>nter <span>y</span>our <span>n</span>ame</h3>
 
+        <form action="/play" method="post" class="form">
+            <input type="text" name="player1_name" id="player1_name" required>
+            <input class="name-btn submit-btn" type="submit" value="Play">
+        </form>
 
-
+    </div>
+</section>
 
 {% endblock%}
