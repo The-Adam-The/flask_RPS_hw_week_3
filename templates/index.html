@@ -2,13 +2,13 @@
 
 {% block content %}
 
-<h2>Choose a player!</h2>
+<h2>Enter your name!</h2>
 
+<form action="/play" method="post" class="form">
+    <input type="text" name="player1_name" id="player1_name" >
+    <input type="submit">
+</form>
 
-{% for player in player_list  %}
-    <a href="/{{player.name}}"><p>{{ player.name }}</p></a>
-    
-{% endfor %}
 
 
 

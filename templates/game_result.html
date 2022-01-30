@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Result</h1>
+
+<h2>{{player1.name}} chose: {{player1.move}}</h2>
+
+<h2>{{player2.name}} chose: {{ player2.move}}</h2>
+
+{% if outcome == None %}
+
+<h2>It's a draw!</h2>
+{% else %}
+<h2>{{outcome}}</h2>
+
+{% endif %}
+
+<a href="/home"><p>Would you like to play again?</p></a>
+
+{% endblock %}

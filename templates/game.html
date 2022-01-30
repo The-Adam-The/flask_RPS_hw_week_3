@@ -2,10 +2,10 @@
 
 {% block content %}
 
-<h1>{{player}}</h1>
 
-<p>Select your weapon!</p>
-<form action="/game/{{move}}" class="form" method="post">
+
+<p>{{player1.name}}, Select your weapon!</p>
+<form action="/result" class="form" method="post">
 <div>
     <label for="rock">Rock</label>
     <input type="radio" id="rock" name="move" value="rock" checked>
@@ -23,4 +23,4 @@
 
 </form>
 
-{% endblock%}
+{% endblock %}
